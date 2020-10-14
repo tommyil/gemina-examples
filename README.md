@@ -6,10 +6,11 @@ It's fast and easy to implement the Gemina Invoice Analysis.
 
 
 
-First, define the API key that you were given:
+First, define the API key that you were given, as well as the Client Id:
 
 ```python
 API_KEY = "== YOUR API KEY =="
+CLIENT_ID = "== YOUR CLIENT KEY =="
 ```
 
 
@@ -20,6 +21,16 @@ Also define the Gemina URL and endpoints:
 GEMINA_API_URL = "https://api.gemina.co.il/v1"
 UPLOAD_URL = "/uploads"
 BUSINESS_DOCUMENTS_URL = "/business_documents"
+```
+
+
+
+If you use a web image (instead of uploading one), then set the URL of the invoice.
+In addition, don't forget to update the upload URL to web.
+
+```python
+INVOICE_URL = "== YOUR INVOICE URL =="
+UPLOAD_URL = "/uploads/web"
 ```
 
 
@@ -68,10 +79,35 @@ def upload_image(image_path):
 
 
 
+**Alternatively,** you can submit an existing web image here:
+
+```python
+def upload_web_image(image_url):
+    url = f"{GEMINA_API_URL}{UPLOAD_URL}"
+    token = f"Basic {API_KEY}"  # Mind the space between 'Basic' and the API KEY
+    headers = {"Authorization": token}
+    json_data = {
+        "external_id": INVOICE_ID,
+        "client_id": CLIENT_ID,
+        "url": image_url,
+    }
+
+    response = requests.post(url, headers=headers, data=json_data)
+    print(f"Response Status Code: {response.status_code}")
+    print(f"Response Text: {response.text}")
+
+    return response.status_code
+```
+
+
+
+Here's how you use the above functions:
+
 ```python
 ### Step I:  Upload Image to the Gemina API ###
 
 status_code = upload_image(INVOICE_PATH)
+# Alternatively: status_code = upload_web_image(INVOICE_URL)
 if status_code == 201:
     pass
 elif status_code == 202:
@@ -154,38 +190,26 @@ else:
 
 ```bash
 Response Status Code: 201
-Response Text: {"timestamp": 1600674677.882719, "external_id": "ex_id_a71a8b75-cf51-44cc-bafa-62ba5cdd7175", "created": "2020-09-21T07:51:17.882719"}
+Response Text: {"external_id": "ex_id_1f4b81a1-1ca1-4830-9a4d-a5dbb1b6c7a7", "created": "2020-10-14T07:16:41.991518", "timestamp": 1602659801.991518}
 
 Response Status Code: 404
-Response Text: {"external_id": "ex_id_a71a8b75-cf51-44cc-bafa-62ba5cdd7175", "message": "Unable to find a Prediction for the specified external_id.", "success": false}
+Response Text: {"external_id": "ex_id_1f4b81a1-1ca1-4830-9a4d-a5dbb1b6c7a7", "message": "Unable to find a Prediction for the specified external_id.", "success": false}
 
 Can't find image. Let's give it 5 seconds to create before we try again...
 Response Status Code: 202
-Response Text: {"timestamp": 1600674678.767574, "created": "2020-09-21T07:51:18.767574", "external_id": "ex_id_a71a8b75-cf51-44cc-bafa-62ba5cdd7175"}
-
-Image is still being processed. Sleeping for 1 second before the next attempt.
-Response Status Code: 202
-Response Text: {"timestamp": 1600674678.767574, "created": "2020-09-21T07:51:18.767574", "external_id": "ex_id_a71a8b75-cf51-44cc-bafa-62ba5cdd7175"}
-
-Image is still being processed. Sleeping for 1 second before the next attempt.
-Response Status Code: 202
-Response Text: {"timestamp": 1600674678.767574, "external_id": "ex_id_a71a8b75-cf51-44cc-bafa-62ba5cdd7175", "created": "2020-09-21T07:51:18.767574"}
-
-Image is still being processed. Sleeping for 1 second before the next attempt.
-Response Status Code: 202
-Response Text: {"timestamp": 1600674678.767574, "external_id": "ex_id_a71a8b75-cf51-44cc-bafa-62ba5cdd7175", "created": "2020-09-21T07:51:18.767574"}
+Response Text: {"external_id": "ex_id_1f4b81a1-1ca1-4830-9a4d-a5dbb1b6c7a7", "created": "2020-10-14T07:16:42.439719", "timestamp": 1602659802.439719}
 
 Image is still being processed. Sleeping for 1 second before the next attempt.
 Response Status Code: 200
-Response Text: {"business_number": {"confidence": "high", "value": 514713288}, "issue_date": {"confidence": "high", "value": "31/08/2020"}, "vat_amount": {"confidence": "high", "value": 228.41}, "timestamp": 1600674679.613979, "supplier_name": {"confidence": "high", "value": "\u05d7\u05de\u05e9\u05ea \u05d4\u05e4\u05e1\u05d9\u05dd \u05e7\u05dc\u05d9\u05df \u05d1\u05e2~\u05de"}, "document_number": {"confidence": "high", "value": 7890}, "external_id": "ex_id_a71a8b75-cf51-44cc-bafa-62ba5cdd7175", "document_type": {"confidence": "high", "value": "invoice"}, "created": "2020-09-21T07:51:19.613979", "total_amount": {"confidence": "high", "value": 1572.0}}
+Response Text: {"net_amount": {"confidence": "high", "value": 1343.59}, "total_amount": {"confidence": "high", "value": 1572.0}, "vat_amount": {"confidence": "high", "value": 228.41}, "supplier_name": {"confidence": "high", "value": "\u05d7\u05de\u05e9\u05ea \u05d4\u05e4\u05e1\u05d9\u05dd \u05e7\u05dc\u05d9\u05df \u05d1\u05e2~\u05de"}, "timestamp": 1602659803.36772, "business_number": {"confidence": "high", "value": 514713288}, "created": "2020-10-14T07:16:43.367720", "issue_date": {"confidence": "high", "value": "31/08/2020"}, "external_id": "ex_id_1f4b81a1-1ca1-4830-9a4d-a5dbb1b6c7a7", "document_number": {"confidence": "high", "value": 7890}, "document_type": {"confidence": "high", "value": "invoice"}}
 
-Successfully retrieved Prediction for Invoice Image ex_id_a71a8b75-cf51-44cc-bafa-62ba5cdd7175:
+Successfully retrieved Prediction for Invoice Image ex_id_1f4b81a1-1ca1-4830-9a4d-a5dbb1b6c7a7:
 {
     "business_number": {
         "confidence": "high",
         "value": 514713288
     },
-    "created": "2020-09-21T07:51:19.613979",
+    "created": "2020-10-14T07:16:43.367720",
     "document_number": {
         "confidence": "high",
         "value": 7890
@@ -194,16 +218,20 @@ Successfully retrieved Prediction for Invoice Image ex_id_a71a8b75-cf51-44cc-baf
         "confidence": "high",
         "value": "invoice"
     },
-    "external_id": "ex_id_a71a8b75-cf51-44cc-bafa-62ba5cdd7175",
+    "external_id": "ex_id_1f4b81a1-1ca1-4830-9a4d-a5dbb1b6c7a7",
     "issue_date": {
         "confidence": "high",
         "value": "31/08/2020"
+    },
+    "net_amount": {
+        "confidence": "high",
+        "value": 1343.59
     },
     "supplier_name": {
         "confidence": "high",
         "value": "\u05d7\u05de\u05e9\u05ea \u05d4\u05e4\u05e1\u05d9\u05dd \u05e7\u05dc\u05d9\u05df \u05d1\u05e2~\u05de"
     },
-    "timestamp": 1600674679.613979,
+    "timestamp": 1602659803.36772,
     "total_amount": {
         "confidence": "high",
         "value": 1572.0
@@ -213,8 +241,6 @@ Successfully retrieved Prediction for Invoice Image ex_id_a71a8b75-cf51-44cc-baf
         "value": 228.41
     }
 }
-
-
 ```
 
 
@@ -225,7 +251,9 @@ Successfully retrieved Prediction for Invoice Image ex_id_a71a8b75-cf51-44cc-baf
 
 The full example code is available here:
 
-[Check out the full example code](https://github.com/tommyil/gemina-examples/blob/master/run_example.py)
+[Image Upload](https://github.com/tommyil/gemina-examples/blob/master/image_example.py)
+
+[Web Image Upload](https://github.com/tommyil/gemina-examples/blob/master/web_image_example.py)
 
 
 

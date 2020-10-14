@@ -5,7 +5,11 @@ import uuid
 
 
 
+
 API_KEY = "== YOUR API KEY =="
+CLIENT_ID = "== YOUR CLIENT KEY =="
+
+
 
 GEMINA_API_URL = "https://api.gemina.co.il/v1"
 UPLOAD_URL = "/uploads"
@@ -15,10 +19,15 @@ INVOICE_PATH = "invoice.png"
 INVOICE_ID = f"ex_id_{uuid.uuid4()}"
 
 
+
 def upload_image(image_path):
     url = f"{GEMINA_API_URL}{UPLOAD_URL}"
-    headers = {"Authorization": API_KEY}
-    json_data = {"external_id": INVOICE_ID}
+    token = f"Basic {API_KEY}"  # Mind the space between 'Basic' and the API KEY
+    headers = {"Authorization": token}
+    json_data = {
+        "external_id": INVOICE_ID,
+        "client_id": CLIENT_ID,
+    }
 
     with open(image_path, "rb") as image_data:
         files = {
@@ -32,9 +41,11 @@ def upload_image(image_path):
         return response.status_code
 
 
+
 def get_prediction(image_id):
     url = f"{GEMINA_API_URL}{BUSINESS_DOCUMENTS_URL}/{image_id}"
-    headers = {"Authorization": API_KEY}
+    token = f"Basic {API_KEY}"  # Mind the space between 'Basic' and the API KEY
+    headers = {"Authorization": token}
     status = 202
 
     while(status == 202 or status == 404):
@@ -53,6 +64,7 @@ def get_prediction(image_id):
         return json.loads(response.text)
     else:
         return None
+
 
 
 def main():
