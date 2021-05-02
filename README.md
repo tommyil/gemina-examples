@@ -190,54 +190,280 @@ else:
 
 ```bash
 Response Status Code: 201
-Response Text: {"external_id": "ex_id_1f4b81a1-1ca1-4830-9a4d-a5dbb1b6c7a7", "created": "2020-10-14T07:16:41.991518", "timestamp": 1602659801.991518}
+Response Text: {"created": "2021-05-02T16:53:58.421956", "timestamp": 1619974438.421956, "external_id": "ex_id_59e2c48a-dd58-4fe5-8ca7-9add86d10eee"}
 
-Response Status Code: 404
-Response Text: {"external_id": "ex_id_1f4b81a1-1ca1-4830-9a4d-a5dbb1b6c7a7", "message": "Unable to find a Prediction for the specified external_id.", "success": false}
-
-Can't find image. Let's give it 5 seconds to create before we try again...
 Response Status Code: 202
-Response Text: {"external_id": "ex_id_1f4b81a1-1ca1-4830-9a4d-a5dbb1b6c7a7", "created": "2020-10-14T07:16:42.439719", "timestamp": 1602659802.439719}
+Response Text: {"created": "2021-05-02T16:53:58.806600", "timestamp": 1619974438.8066, "external_id": "ex_id_59e2c48a-dd58-4fe5-8ca7-9add86d10eee"}
 
 Image is still being processed. Sleeping for 1 second before the next attempt.
 Response Status Code: 200
-Response Text: {"net_amount": {"confidence": "high", "value": 1343.59}, "total_amount": {"confidence": "high", "value": 1572.0}, "vat_amount": {"confidence": "high", "value": 228.41}, "supplier_name": {"confidence": "high", "value": "\u05d7\u05de\u05e9\u05ea \u05d4\u05e4\u05e1\u05d9\u05dd \u05e7\u05dc\u05d9\u05df \u05d1\u05e2~\u05de"}, "timestamp": 1602659803.36772, "business_number": {"confidence": "high", "value": 514713288}, "created": "2020-10-14T07:16:43.367720", "issue_date": {"confidence": "high", "value": "31/08/2020"}, "external_id": "ex_id_1f4b81a1-1ca1-4830-9a4d-a5dbb1b6c7a7", "document_number": {"confidence": "high", "value": 7890}, "document_type": {"confidence": "high", "value": "invoice"}}
+Response Text: {"total_amount": {"coordinates": {"normalized": [[156, 936], [242, 936], [242, 958], [156, 958]], "original": [[208, 1246], [322, 1246], [322, 1275], [208, 1275]]}, "value": 1572.0, "confidence": "high"}, "timestamp": 1619974439.228592, "issue_date": {"coordinates": {"normalized": [[782, 817], [885, 818], [885, 838], [782, 837]], "original": [[1041, 1087], [1178, 1089], [1178, 1115], [1041, 1114]]}, "value": "31/08/2020", "confidence": "high"}, "external_id": "ex_id_59e2c48a-dd58-4fe5-8ca7-9add86d10eee", "business_number": {"coordinates": {"normalized": [[182, 199], [303, 201], [303, 223], [182, 221]], "original": [[242, 265], [403, 268], [403, 297], [242, 294]]}, "value": 514713288, "confidence": "high"}, "net_amount": {"coordinates": {"normalized": [[173, 877], [244, 877], [244, 896], [173, 896]], "original": [[230, 1167], [325, 1167], [325, 1192], [230, 1192]]}, "value": 1343.59, "confidence": "high"}, "document_type": {"coordinates": null, "value": "invoice", "confidence": "high"}, "supplier_name": {"coordinates": null, "value": "\u05d7\u05de\u05e9\u05ea \u05d4\u05e4\u05e1\u05d9\u05dd \u05e7\u05dc\u05d9\u05df \u05d1\u05e2\"\u05de", "confidence": "high"}, "created": "2021-05-02T16:53:59.228592", "document_number": {"coordinates": {"normalized": [[412, 289], [501, 292], [500, 326], [411, 323]], "original": [[548, 385], [667, 389], [665, 434], [547, 430]]}, "value": 7890, "confidence": "high"}, "vat_amount": {"coordinates": {"normalized": [[189, 906], [241, 907], [241, 925], [189, 924]], "original": [[251, 1206], [321, 1207], [321, 1231], [251, 1230]]}, "value": 228.41, "confidence": "high"}}
 
-Successfully retrieved Prediction for Invoice Image ex_id_1f4b81a1-1ca1-4830-9a4d-a5dbb1b6c7a7:
+Successfully retrieved Prediction for Invoice Image ex_id_59e2c48a-dd58-4fe5-8ca7-9add86d10eee:
 {
     "business_number": {
         "confidence": "high",
+        "coordinates": {
+            "normalized": [
+                [
+                    182,
+                    199
+                ],
+                [
+                    303,
+                    201
+                ],
+                [
+                    303,
+                    223
+                ],
+                [
+                    182,
+                    221
+                ]
+            ],
+            "original": [
+                [
+                    242,
+                    265
+                ],
+                [
+                    403,
+                    268
+                ],
+                [
+                    403,
+                    297
+                ],
+                [
+                    242,
+                    294
+                ]
+            ]
+        },
         "value": 514713288
     },
-    "created": "2020-10-14T07:16:43.367720",
+    "created": "2021-05-02T16:53:59.228592",
     "document_number": {
         "confidence": "high",
+        "coordinates": {
+            "normalized": [
+                [
+                    412,
+                    289
+                ],
+                [
+                    501,
+                    292
+                ],
+                [
+                    500,
+                    326
+                ],
+                [
+                    411,
+                    323
+                ]
+            ],
+            "original": [
+                [
+                    548,
+                    385
+                ],
+                [
+                    667,
+                    389
+                ],
+                [
+                    665,
+                    434
+                ],
+                [
+                    547,
+                    430
+                ]
+            ]
+        },
         "value": 7890
     },
     "document_type": {
         "confidence": "high",
+        "coordinates": null,
         "value": "invoice"
     },
-    "external_id": "ex_id_1f4b81a1-1ca1-4830-9a4d-a5dbb1b6c7a7",
+    "external_id": "ex_id_59e2c48a-dd58-4fe5-8ca7-9add86d10eee",
     "issue_date": {
         "confidence": "high",
+        "coordinates": {
+            "normalized": [
+                [
+                    782,
+                    817
+                ],
+                [
+                    885,
+                    818
+                ],
+                [
+                    885,
+                    838
+                ],
+                [
+                    782,
+                    837
+                ]
+            ],
+            "original": [
+                [
+                    1041,
+                    1087
+                ],
+                [
+                    1178,
+                    1089
+                ],
+                [
+                    1178,
+                    1115
+                ],
+                [
+                    1041,
+                    1114
+                ]
+            ]
+        },
         "value": "31/08/2020"
     },
     "net_amount": {
         "confidence": "high",
+        "coordinates": {
+            "normalized": [
+                [
+                    173,
+                    877
+                ],
+                [
+                    244,
+                    877
+                ],
+                [
+                    244,
+                    896
+                ],
+                [
+                    173,
+                    896
+                ]
+            ],
+            "original": [
+                [
+                    230,
+                    1167
+                ],
+                [
+                    325,
+                    1167
+                ],
+                [
+                    325,
+                    1192
+                ],
+                [
+                    230,
+                    1192
+                ]
+            ]
+        },
         "value": 1343.59
     },
     "supplier_name": {
         "confidence": "high",
-        "value": "\u05d7\u05de\u05e9\u05ea \u05d4\u05e4\u05e1\u05d9\u05dd \u05e7\u05dc\u05d9\u05df \u05d1\u05e2~\u05de"
+        "coordinates": null,
+        "value": "\u05d7\u05de\u05e9\u05ea \u05d4\u05e4\u05e1\u05d9\u05dd \u05e7\u05dc\u05d9\u05df \u05d1\u05e2\"\u05de"
     },
-    "timestamp": 1602659803.36772,
+    "timestamp": 1619974439.228592,
     "total_amount": {
         "confidence": "high",
+        "coordinates": {
+            "normalized": [
+                [
+                    156,
+                    936
+                ],
+                [
+                    242,
+                    936
+                ],
+                [
+                    242,
+                    958
+                ],
+                [
+                    156,
+                    958
+                ]
+            ],
+            "original": [
+                [
+                    208,
+                    1246
+                ],
+                [
+                    322,
+                    1246
+                ],
+                [
+                    322,
+                    1275
+                ],
+                [
+                    208,
+                    1275
+                ]
+            ]
+        },
         "value": 1572.0
     },
     "vat_amount": {
         "confidence": "high",
+        "coordinates": {
+            "normalized": [
+                [
+                    189,
+                    906
+                ],
+                [
+                    241,
+                    907
+                ],
+                [
+                    241,
+                    925
+                ],
+                [
+                    189,
+                    924
+                ]
+            ],
+            "original": [
+                [
+                    251,
+                    1206
+                ],
+                [
+                    321,
+                    1207
+                ],
+                [
+                    321,
+                    1231
+                ],
+                [
+                    251,
+                    1230
+                ]
+            ]
+        },
         "value": 228.41
     }
 }
@@ -246,6 +472,45 @@ Successfully retrieved Prediction for Invoice Image ex_id_1f4b81a1-1ca1-4830-9a4
 
 
 ------
+
+
+
+## Other Features
+
+
+
+#### Pass the Client Tax Id
+
+To facilitate the algorithm's work and increase accuracy, you can pass the Client's Tax Id to the API with each Json call.
+
+This will help to avoid situations where the Client's Tax Id is mistakenly interpreted as the Supplier's Tax Id (or Business Number).
+
+To do so, add the following line to the data Dictionary (that is, to your Json):
+
+```python
+{ "client_business_number": "== Your Client's Business Number =="}
+```
+
+
+
+Full example:
+
+```python
+json_data = {
+	"external_id": INVOICE_ID,
+    "client_id": CLIENT_ID,
+    "url": image_url,
+    "client_business_number": "== Your Client's Business Number =="
+}
+```
+
+The `client_business_number` can be represented either by `string` or `int`.
+
+
+
+------
+
+
 
 
 
