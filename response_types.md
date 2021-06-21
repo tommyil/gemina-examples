@@ -283,17 +283,17 @@
 
 ## Predicated Value
 
-The Predicted Value is nested within the full json response. Each one of the returned values is represented by the field.
+The Predicted Value is nested within the full json response. Each one of the returned values is represented by this field.
 
 
 
 #### Values:
 
-**Original Coordinates:** Integer coordinates for the designated value within the uploaded image.
+**Original Coordinates:** Integer coordinates for the designated value within the uploaded image. If the system fails to identify the coordinates, this value is set to null.
 
 **Normalized Coordinates:** The same, but within the processed cloud-image, which has been normalized in terms of width and height.
 
-Value: The predicted value.
+**Value:** The predicted value
 
 **Confidence:** The assessed confidence level of the prediction
 
@@ -368,13 +368,13 @@ Example:
 
 #### Date
 
-String Type in European Format `dd//mm//yyyy`
+Date Type in European Format - `dd//mm//yyyy`
 
 
 
 #### Business Number
 
-Integer between 5 to 11 digits
+Integer from 5 to 11 digits
 
 
 
