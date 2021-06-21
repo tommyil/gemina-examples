@@ -362,11 +362,23 @@ Example:
 
 
 
-## Non-String Field Type Values
+## String Field Types
 
 
 
-#### Date
+#### Supplier Name
+
+The Name of the supplier or the document issuer
+
+
+
+#### 
+
+## Non-String Field Types
+
+
+
+#### Issue Date
 
 Date Type in European Format - `dd//mm//yyyy`
 
@@ -375,6 +387,12 @@ Date Type in European Format - `dd//mm//yyyy`
 #### Business Number
 
 Integer from 5 to 11 digits
+
+
+
+#### Document Number
+
+Long Integer
 
 
 
