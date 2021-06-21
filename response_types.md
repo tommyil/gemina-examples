@@ -423,7 +423,7 @@ Possible Values:
 
 #### Primary Document Type
 
-This field was created to simplify of the post-processing for some vendors. It can largely be ignored.
+This field was created to simplify post-processing for some vendors. It can largely be ignored.
 
 
 
