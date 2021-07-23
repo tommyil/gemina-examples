@@ -32,17 +32,17 @@ https://api.gemina.co.il/v1/business_documents
 {
     "external_id": "== YOUR INVOICE ID ==",
     "client_id": "== YOUR CLIENT KEY ==",
-    "total_amount": 117.0, 					// can be either string or number
-    "net_amount": 100.0, 					// can be either string or number
-    "vat_amount": 17.0, 					// can be either string or number
-    "document_number": "IL7890", 			// can contain chars/letters as well
-    "issue_date": "2021-07-22", 			// YYYY-MM-DD
-    "business_number": "EUR-514713288", 	// can contain characters as well
-    "supplier_name": "Five Straps", 		// any language
-    "document_type": "invoice_receipt", 	// from a closed list
-    "expense_type": "fuel", 				// from a closed list
-    "payment_method": "credit_card", 		// from a closed list
-    "currency": "usd", 						// from a closed list
+    "total_amount": 117.0,
+    "net_amount": 100.0,
+    "vat_amount": 17.0,
+    "document_number": "IL7890",
+    "issue_date": "2021-07-22",
+    "business_number": "EUR-514713288",
+    "supplier_name": "Five Straps",
+    "document_type": "invoice_receipt",
+    "expense_type": "fuel",
+    "payment_method": "credit_card",
+    "currency": "usd",
 }
 
 ```
@@ -99,6 +99,8 @@ Type: String
 
 Description: The Document Number
 
+*Can contain characters/letters as well.*
+
 
 
 ##### issue_date
@@ -107,7 +109,7 @@ Type: Date
 
 Description: A string that contains the updated Issue Date
 
-Format (String): YYYY-MM-DD
+*Format (String): YYYY-MM-DD*
 
 
 
@@ -117,6 +119,8 @@ Type: Date
 
 Description: The supplier's business-number
 
+*Can contain characters/letters as well.*
+
 
 
 ##### supplier_name
@@ -124,6 +128,8 @@ Description: The supplier's business-number
 Type: String
 
 Description: The supplier's name for the update 
+
+*Supports all languages.*
 
 
 
@@ -133,7 +139,7 @@ Type: Enum
 
 Description: The document's type
 
-Must be a single value from the list below:
+*Must be a single value from the list below:*
 
 ```json
 [
@@ -156,7 +162,7 @@ Type: Enum
 
 Description: The document's expense-type 
 
-Must be a single value from the list below:
+*Must be a single value from the list below:*
 
 ```json
 [
@@ -212,7 +218,7 @@ Type: Enum
 
 Description: The used payment-method to pay for services / merchandise.
 
-Must be a single value from the list below:
+*Must be a single value from the list below:*
 
 ```json
 [
@@ -234,7 +240,7 @@ Type: Enum
 
 Description: The used currency for payment
 
-Must be a single value from the list below:
+*Must be a single value from the list below:*
 
 ```json
 [
