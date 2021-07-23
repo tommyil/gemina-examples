@@ -513,32 +513,54 @@ Optional values:
 
 ```json
 [
-    "ILS",
-    "USD",
-    "EUR",
-    "SEK",
-    "GBP",
-    "CZK",
-    "ZAR",
-    "CAD",
-    "JPY",
-    "RUB",
-    "SGD",
-    "PLN",
-    "AUD",
-    "INR",
-    "HKD",
-    "THB",
-    "MXN",
-    "CHF",
-    "TRY",
-    "DKK",
-    "KRW",
-    "CNY",
-    "BRL",
-    "RON",
-    "HRK",
-    "NOK",
+    "ils",
+    "usd",
+    "eur",
+    "sek",
+    "gbp",
+    "czk",
+    "zar",
+    "cad",
+    "jpy",
+    "rub",
+    "sgd",
+    "pln",
+    "aud",
+    "inr",
+    "hkd",
+    "thb",
+    "mxn",
+    "chf",
+    "try",
+    "dkk",
+    "krw",
+    "cny",
+    "brl",
+    "ron",
+    "hrk",
+    "nok"
+]
+```
+
+
+
+#### Payment Method
+
+This will provide the used payment method.
+
+Optional values:
+
+
+
+```json
+[
+    "cheque",
+    "wire_transfer",
+    "credit_card",
+    "paypal",
+    "cash",
+    "app",
+    "other"
 ]
 ```
 
