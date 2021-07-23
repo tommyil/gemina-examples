@@ -115,7 +115,7 @@ Description: A string that contains the updated Issue Date
 
 ##### business_number
 
-Type: Date
+Type: String
 
 Description: The supplier's business-number
 
