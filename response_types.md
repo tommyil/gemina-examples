@@ -6,256 +6,113 @@
 
 ```json
 {
-  "vat_amount": {
-    "value": 228.41,
-    "coordinates": {
-      "normalized": [
-        [
-          189,
-          909
-        ],
-        [
-          241,
-          910
-        ],
-        [
-          241,
-          924
-        ],
-        [
-          189,
-          923
-        ]
-      ],
-      "original": [
-        [
-          251,
-          1210
-        ],
-        [
-          321,
-          1211
-        ],
-        [
-          321,
-          1230
-        ],
-        [
-          251,
-          1228
-        ]
-      ]
-    },
-    "confidence": "high"
-  },
-  "document_type": {
-    "value": "invoice",
-    "coordinates": null,
-    "confidence": "high"
-  },
-  "document_number": {
-    "value": 7890,
-    "coordinates": {
-      "normalized": [
-        [
-          412,
-          291
-        ],
-        [
-          501,
-          294
-        ],
-        [
-          500,
-          327
-        ],
-        [
-          411,
-          324
-        ]
-      ],
-      "original": [
-        [
-          548,
-          387
-        ],
-        [
-          667,
-          391
-        ],
-        [
-          665,
-          435
-        ],
-        [
-          547,
-          431
-        ]
-      ]
-    },
-    "confidence": "high"
-  },
-  "net_amount": {
-    "value": 1343.59,
-    "coordinates": {
-      "normalized": [
-        [
-          173,
-          880
-        ],
-        [
-          244,
-          880
-        ],
-        [
-          244,
-          896
-        ],
-        [
-          173,
-          896
-        ]
-      ],
-      "original": [
-        [
-          230,
-          1171
-        ],
-        [
-          325,
-          1171
-        ],
-        [
-          325,
-          1192
-        ],
-        [
-          230,
-          1192
-        ]
-      ]
-    },
-    "confidence": "high"
-  },
-  "primary_document_type": {
-    "value": "invoice",
-    "coordinates": null,
-    "confidence": "high"
-  },
   "total_amount": {
-    "value": 1572,
     "coordinates": {
-      "normalized": [
-        [
-          157,
-          938
-        ],
-        [
-          242,
-          938
-        ],
-        [
-          242,
-          959
-        ],
-        [
-          157,
-          959
-        ]
-      ],
       "original": [
         [
-          209,
-          1248
+          208,
+          1246
         ],
         [
           322,
-          1248
+          1246
         ],
         [
           322,
-          1276
+          1275
         ],
         [
-          209,
-          1276
+          208,
+          1275
+        ]
+      ],
+      "normalized": [
+        [
+          156,
+          936
+        ],
+        [
+          242,
+          936
+        ],
+        [
+          242,
+          958
+        ],
+        [
+          156,
+          958
         ]
       ]
     },
+    "value": 1572,
     "confidence": "high"
   },
-  "external_id": "Form_64a1da38-6111-4561-8d99-f0dce152a63f_invoice.png",
-  "issue_date": {
-    "value": "31/08/2020",
+  "vat_amount": {
     "coordinates": {
-      "normalized": [
-        [
-          782,
-          819
-        ],
-        [
-          885,
-          820
-        ],
-        [
-          885,
-          836
-        ],
-        [
-          782,
-          835
-        ]
-      ],
       "original": [
         [
-          1041,
-          1090
+          251,
+          1206
         ],
         [
-          1178,
-          1091
+          321,
+          1207
         ],
         [
-          1178,
-          1113
+          321,
+          1231
         ],
         [
-          1041,
-          1111
+          251,
+          1230
+        ]
+      ],
+      "normalized": [
+        [
+          189,
+          906
+        ],
+        [
+          241,
+          907
+        ],
+        [
+          241,
+          925
+        ],
+        [
+          189,
+          924
         ]
       ]
     },
+    "value": 228.41,
     "confidence": "high"
+  },
+  "created": "2021-08-19T14:28:49.938383",
+  "timestamp": 1629383329.938383,
+  "primary_document_type": {
+    "coordinates": null,
+    "value": "invoice",
+    "confidence": "high"
+  },
+  "external_id": "Form_610845c3-43a7-43b7-8fb8-b8bb2ca17f25_invoice.png",
+  "currency": {
+    "coordinates": null,
+    "value": "ils",
+    "confidence": "medium"
   },
   "business_number": {
-    "value": 514713288,
     "coordinates": {
-      "normalized": [
-        [
-          182,
-          200
-        ],
-        [
-          304,
-          202
-        ],
-        [
-          304,
-          223
-        ],
-        [
-          182,
-          221
-        ]
-      ],
       "original": [
         [
           242,
-          266
+          265
         ],
         [
           405,
-          269
+          268
         ],
         [
           405,
@@ -265,17 +122,165 @@
           242,
           294
         ]
+      ],
+      "normalized": [
+        [
+          182,
+          199
+        ],
+        [
+          304,
+          201
+        ],
+        [
+          304,
+          223
+        ],
+        [
+          182,
+          221
+        ]
       ]
     },
+    "value": 514713288,
+    "confidence": "high"
+  },
+  "issue_date": {
+    "coordinates": {
+      "original": [
+        [
+          1041,
+          1086
+        ],
+        [
+          1178,
+          1090
+        ],
+        [
+          1176,
+          1117
+        ],
+        [
+          1039,
+          1113
+        ]
+      ],
+      "normalized": [
+        [
+          782,
+          816
+        ],
+        [
+          885,
+          819
+        ],
+        [
+          884,
+          839
+        ],
+        [
+          781,
+          836
+        ]
+      ]
+    },
+    "value": "31/08/2020",
+    "confidence": "high"
+  },
+  "document_type": {
+    "coordinates": null,
+    "value": "invoice",
+    "confidence": "high"
+  },
+  "document_number": {
+    "coordinates": {
+      "original": [
+        [
+          548,
+          385
+        ],
+        [
+          667,
+          389
+        ],
+        [
+          665,
+          434
+        ],
+        [
+          547,
+          430
+        ]
+      ],
+      "normalized": [
+        [
+          412,
+          289
+        ],
+        [
+          501,
+          292
+        ],
+        [
+          500,
+          326
+        ],
+        [
+          411,
+          323
+        ]
+      ]
+    },
+    "value": 7890,
+    "confidence": "high"
+  },
+  "net_amount": {
+    "coordinates": {
+      "original": [
+        [
+          230,
+          1167
+        ],
+        [
+          325,
+          1167
+        ],
+        [
+          325,
+          1192
+        ],
+        [
+          230,
+          1192
+        ]
+      ],
+      "normalized": [
+        [
+          173,
+          877
+        ],
+        [
+          244,
+          877
+        ],
+        [
+          244,
+          896
+        ],
+        [
+          173,
+          896
+        ]
+      ]
+    },
+    "value": 1343.59,
     "confidence": "high"
   },
   "supplier_name": {
-    "value": "חמשת הפסים קלין בע\"מ",
     "coordinates": null,
+    "value": "חמשת הפסים קלין בע\"מ",
     "confidence": "high"
-  },
-  "timestamp": 1624270976.531311,
-  "created": "2021-06-21T10:22:56.531311"
+  }
 }
 ```
 
@@ -372,8 +377,6 @@ The Name of the supplier or the document issuer
 
 
 
-#### 
-
 ## Non-String Field Types
 
 
@@ -441,6 +444,45 @@ Possible Values:
 
 
 
+#### Currency
+
+This will provide the document's used currency.
+
+Optional values:
+
+```json
+[
+    "ils",
+    "usd",
+    "eur",
+    "sek",
+    "gbp",
+    "czk",
+    "zar",
+    "cad",
+    "jpy",
+    "rub",
+    "sgd",
+    "pln",
+    "aud",
+    "inr",
+    "hkd",
+    "thb",
+    "mxn",
+    "chf",
+    "try",
+    "dkk",
+    "krw",
+    "cny",
+    "brl",
+    "ron",
+    "hrk",
+    "nok"
+]
+```
+
+
+
 
 
 ## Future Fields
@@ -498,47 +540,6 @@ This will represent the expense classification and will contain one of the follo
 	"depreciation",
 	"banking",
 	"fuel_reimbursement"
-]
-```
-
-
-
-#### Currency
-
-This will provide the document's used currency.
-
-Optional values:
-
-
-
-```json
-[
-    "ils",
-    "usd",
-    "eur",
-    "sek",
-    "gbp",
-    "czk",
-    "zar",
-    "cad",
-    "jpy",
-    "rub",
-    "sgd",
-    "pln",
-    "aud",
-    "inr",
-    "hkd",
-    "thb",
-    "mxn",
-    "chf",
-    "try",
-    "dkk",
-    "krw",
-    "cny",
-    "brl",
-    "ron",
-    "hrk",
-    "nok"
 ]
 ```
 

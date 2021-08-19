@@ -190,16 +190,16 @@ else:
 
 ```bash
 Response Status Code: 201
-Response Text: {"created": "2021-05-02T16:53:58.421956", "timestamp": 1619974438.421956, "external_id": "ex_id_59e2c48a-dd58-4fe5-8ca7-9add86d10eee"}
+Response Text: {"external_id": "ex_id_cd8482cb-899b-48bc-9530-430ede150951", "timestamp": 1629383949.866724, "created": "2021-08-19T14:39:09.866724"}
 
-Response Status Code: 202
-Response Text: {"created": "2021-05-02T16:53:58.806600", "timestamp": 1619974438.8066, "external_id": "ex_id_59e2c48a-dd58-4fe5-8ca7-9add86d10eee"}
+Response Status Code: 404
+Response Text: {"external_id": "ex_id_cd8482cb-899b-48bc-9530-430ede150951", "client_id": 159, "message": "Unable to find a Prediction for the specified external_id.", "success": false}
 
-Image is still being processed. Sleeping for 1 second before the next attempt.
+Can't find image. Let's give it 5 seconds to create before we try again...
 Response Status Code: 200
-Response Text: {"total_amount": {"coordinates": {"normalized": [[156, 936], [242, 936], [242, 958], [156, 958]], "original": [[208, 1246], [322, 1246], [322, 1275], [208, 1275]]}, "value": 1572.0, "confidence": "high"}, "timestamp": 1619974439.228592, "issue_date": {"coordinates": {"normalized": [[782, 817], [885, 818], [885, 838], [782, 837]], "original": [[1041, 1087], [1178, 1089], [1178, 1115], [1041, 1114]]}, "value": "31/08/2020", "confidence": "high"}, "external_id": "ex_id_59e2c48a-dd58-4fe5-8ca7-9add86d10eee", "business_number": {"coordinates": {"normalized": [[182, 199], [303, 201], [303, 223], [182, 221]], "original": [[242, 265], [403, 268], [403, 297], [242, 294]]}, "value": 514713288, "confidence": "high"}, "net_amount": {"coordinates": {"normalized": [[173, 877], [244, 877], [244, 896], [173, 896]], "original": [[230, 1167], [325, 1167], [325, 1192], [230, 1192]]}, "value": 1343.59, "confidence": "high"}, "document_type": {"coordinates": null, "value": "invoice", "confidence": "high"}, "supplier_name": {"coordinates": null, "value": "\u05d7\u05de\u05e9\u05ea \u05d4\u05e4\u05e1\u05d9\u05dd \u05e7\u05dc\u05d9\u05df \u05d1\u05e2\"\u05de", "confidence": "high"}, "created": "2021-05-02T16:53:59.228592", "document_number": {"coordinates": {"normalized": [[412, 289], [501, 292], [500, 326], [411, 323]], "original": [[548, 385], [667, 389], [665, 434], [547, 430]]}, "value": 7890, "confidence": "high"}, "vat_amount": {"coordinates": {"normalized": [[189, 906], [241, 907], [241, 925], [189, 924]], "original": [[251, 1206], [321, 1207], [321, 1231], [251, 1230]]}, "value": 228.41, "confidence": "high"}}
+Response Text: {"supplier_name": {"value": "\u05d7\u05de\u05e9\u05ea \u05d4\u05e4\u05e1\u05d9\u05dd \u05e7\u05dc\u05d9\u05df \u05d1\u05e2\"\u05de", "confidence": "high", "coordinates": null}, "currency": {"value": "ils", "confidence": "medium", "coordinates": null}, "document_type": {"value": "invoice", "confidence": "high", "coordinates": null}, "vat_amount": {"value": 228.41, "confidence": "high", "coordinates": {"original": [[251, 1206], [321, 1207], [321, 1231], [251, 1230]], "normalized": [[189, 906], [241, 907], [241, 925], [189, 924]]}}, "business_number": {"value": 514713288, "confidence": "high", "coordinates": {"original": [[242, 265], [405, 268], [405, 297], [242, 294]], "normalized": [[182, 199], [304, 201], [304, 223], [182, 221]]}}, "timestamp": 1629383950.99213, "total_amount": {"value": 1572.0, "confidence": "high", "coordinates": {"original": [[208, 1246], [322, 1246], [322, 1275], [208, 1275]], "normalized": [[156, 936], [242, 936], [242, 958], [156, 958]]}}, "issue_date": {"value": "31/08/2020", "confidence": "high", "coordinates": {"original": [[1041, 1086], [1178, 1090], [1176, 1117], [1039, 1113]], "normalized": [[782, 816], [885, 819], [884, 839], [781, 836]]}}, "primary_document_type": {"value": "invoice", "confidence": "high", "coordinates": null}, "document_number": {"value": 7890, "confidence": "high", "coordinates": {"original": [[548, 385], [667, 389], [665, 434], [547, 430]], "normalized": [[412, 289], [501, 292], [500, 326], [411, 323]]}}, "created": "2021-08-19T14:39:10.992130", "net_amount": {"value": 1343.59, "confidence": "high", "coordinates": {"original": [[230, 1167], [325, 1167], [325, 1192], [230, 1192]], "normalized": [[173, 877], [244, 877], [244, 896], [173, 896]]}}, "external_id": "ex_id_cd8482cb-899b-48bc-9530-430ede150951"}
 
-Successfully retrieved Prediction for Invoice Image ex_id_59e2c48a-dd58-4fe5-8ca7-9add86d10eee:
+Successfully retrieved Prediction for Invoice Image ex_id_cd8482cb-899b-48bc-9530-430ede150951:
 {
     "business_number": {
         "confidence": "high",
@@ -210,11 +210,11 @@ Successfully retrieved Prediction for Invoice Image ex_id_59e2c48a-dd58-4fe5-8ca
                     199
                 ],
                 [
-                    303,
+                    304,
                     201
                 ],
                 [
-                    303,
+                    304,
                     223
                 ],
                 [
@@ -228,11 +228,11 @@ Successfully retrieved Prediction for Invoice Image ex_id_59e2c48a-dd58-4fe5-8ca
                     265
                 ],
                 [
-                    403,
+                    405,
                     268
                 ],
                 [
-                    403,
+                    405,
                     297
                 ],
                 [
@@ -243,7 +243,12 @@ Successfully retrieved Prediction for Invoice Image ex_id_59e2c48a-dd58-4fe5-8ca
         },
         "value": 514713288
     },
-    "created": "2021-05-02T16:53:59.228592",
+    "created": "2021-08-19T14:39:10.992130",
+    "currency": {
+        "confidence": "medium",
+        "coordinates": null,
+        "value": "ils"
+    },
     "document_number": {
         "confidence": "high",
         "coordinates": {
@@ -291,44 +296,44 @@ Successfully retrieved Prediction for Invoice Image ex_id_59e2c48a-dd58-4fe5-8ca
         "coordinates": null,
         "value": "invoice"
     },
-    "external_id": "ex_id_59e2c48a-dd58-4fe5-8ca7-9add86d10eee",
+    "external_id": "ex_id_cd8482cb-899b-48bc-9530-430ede150951",
     "issue_date": {
         "confidence": "high",
         "coordinates": {
             "normalized": [
                 [
                     782,
-                    817
+                    816
                 ],
                 [
                     885,
-                    818
+                    819
                 ],
                 [
-                    885,
-                    838
+                    884,
+                    839
                 ],
                 [
-                    782,
-                    837
+                    781,
+                    836
                 ]
             ],
             "original": [
                 [
                     1041,
-                    1087
+                    1086
                 ],
                 [
                     1178,
-                    1089
+                    1090
                 ],
                 [
-                    1178,
-                    1115
+                    1176,
+                    1117
                 ],
                 [
-                    1041,
-                    1114
+                    1039,
+                    1113
                 ]
             ]
         },
@@ -376,12 +381,17 @@ Successfully retrieved Prediction for Invoice Image ex_id_59e2c48a-dd58-4fe5-8ca
         },
         "value": 1343.59
     },
+    "primary_document_type": {
+        "confidence": "high",
+        "coordinates": null,
+        "value": "invoice"
+    },
     "supplier_name": {
         "confidence": "high",
         "coordinates": null,
         "value": "\u05d7\u05de\u05e9\u05ea \u05d4\u05e4\u05e1\u05d9\u05dd \u05e7\u05dc\u05d9\u05df \u05d1\u05e2\"\u05de"
     },
-    "timestamp": 1619974439.228592,
+    "timestamp": 1629383950.99213,
     "total_amount": {
         "confidence": "high",
         "coordinates": {
