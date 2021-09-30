@@ -565,3 +565,94 @@ Optional values:
 ]
 ```
 
+
+
+
+
+## Errors
+
+Errors are returned in a constructed Json format, and are assigned with the coresponding status code.
+
+ 
+
+#### Field Names
+
+By and large, the errors contain the following fields:
+
+
+
+##### 1. Message
+
+Contains a short  description of the failure reason.
+
+In the Json body is appears at `message`.
+
+
+
+##### 2. Success
+
+Indicated whether an operation was successful or not. In errors, it will always be set to false.
+
+In the Json body it appears as `success`.
+
+
+
+#### Exceptions
+
+There are exceptions where API calls are rejected in preceding layers, prior to the API Views Layer (where calls are usually handled). In that case, multiple errors will be stored in the `messages` field and the structure will be plain. In addition, a 422 error code ("*Unprocessable Entity*") will be assigned to the response.
+
+
+
+#### Error Codes
+
+The most important status of Error Responses are the Error Response Codes. These will reveal the nature of the error and the way you should handle it.
+
+To a large extent, Gemina follows industry standards and common practices when error codes are assigned.
+
+
+
+As a rule of thumb:
+
+
+
+**Status Codes from 200 to 299:**
+
+The request has been processed successfuly.
+
+
+
+**Status Codes from 400 to 499:**
+
+There is a problem either with the uploaded document, or the API is not used properly.
+
+In other words, the problem is on your end and under your responsibility.
+
+Common errors include, but not limited to:
+
+<u>401 - Illegal Credential</u>s
+
+<u>422 - Invoice page-length cannot be longer than 6 pages.</u>
+
+```
+{
+  "external_id": "Form_9799f10d-eb5c-4abb-9e68-ccd6255ba69f_Document.pdf",
+  "client_id": 65,
+  "message": "Failed to predict for Image Form_9799f10d-eb5c-4abb-9e68-ccd6255ba69f_Document.pdf: Unprocessable Error: PDF Error: Invoice page-length cannot be longer than 6 pages. Image Id: Form_9799f10d-eb5c-4abb-9e68-ccd6255ba69f_Document.pdf",
+  "success": false
+}
+```
+
+<u>422 Unprocessable Entity:</u> The request was well-formed but was unable to be followed due to semantic errors. {'client_business_number': ['Must be greater than or equal to 10000000 and less than or equal to 999999999.']}
+
+And more...
+
+Generally, it is safe to assume that 422 responses can be forwarded to the end user.
+
+
+
+**Status Codes from 500 to 599:**
+
+There is an internal problem within the Gemina servers, i.e. the problem is on our end and should be fixed by us.
+
+If you encounter one such error, please inform us immediately.
+
