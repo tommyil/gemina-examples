@@ -571,7 +571,7 @@ Optional values:
 
 ## Errors
 
-Errors are returned in a constructed Json format, and are assigned with the coresponding status code.
+Errors are returned in a constructed Json format, and are assigned with a coresponding status code.
 
  
 
@@ -581,25 +581,81 @@ By and large, the errors contain the following fields:
 
 
 
-##### 1. Message
+- ##### Message  (`message` in the Json)
+
 
 Contains a short  description of the failure reason.
 
-In the Json body is appears at `message`.
+
+
+- ##### Success (`success` in the Json)
+
+
+Indicated whether an operation was successful or not. With errors, it always defaults to false.
 
 
 
-##### 2. Success
+- ##### Type (`type` in the Json)
 
-Indicated whether an operation was successful or not. In errors, it will always be set to false.
+When this field contains a value, it is recommended to forward this info to the end user.
 
-In the Json body it appears as `success`.
+We usually populate the type in the event of PDF and image errors. In other words  - unprocessable data that users upload.
+
+Here's the full list of types:
+
+```python
+[
+    "pdf_error", # Unable to process PDF due to an error
+    "thumbnail_error", # Unable to process Image thumbnail due to an error
+    "not_an_image_file_error", # The uploaded file is not a valid image / PDF file
+    "max_pixels_error", # The PDF image exceeds limit of 89478485 pixels.
+    "image_file_is_truncated_error", # the image file is truncated and cannot be processed.
+    "pdf_early_processing_failed_error" # Unable to process PDF due to an error.
+    "pdf_max_pages_exceeded_error",# The PDF contains more than 6 pages, and cannot be processed.
+]
+```
 
 
 
-#### Exceptions
+Example:
 
-There are exceptions where API calls are rejected in preceding layers, prior to the API Views Layer (where calls are usually handled). In that case, multiple errors will be stored in the `messages` field and the structure will be plain. In addition, a 422 error code ("*Unprocessable Entity*") will be assigned to the response.
+```json
+{
+  "external_id": "Form_cccb3c58-35d5-468f-b7c9-5c6e4b15a6c8_Document.pdf",
+  "client_id": 65,
+  "type": "not_an_image_file_error",
+  "message": "Failed to predict for Image Form_cccb3c58-35d5-468f-b7c9-5c6e4b15a6c8_Document.pdf: Unprocessable Error: Not an Image File Error: Image Form_cccb3c58-35d5-468f-b7c9-5c6e4b15a6c8_Document.pdf is not an image file.",
+  "success": false
+}
+```
+
+
+
+#### Exceptions to Error Format
+
+There are exceptions where API calls are rejected in preceding layers, prior to the API Views Layer (where calls are usually handled). In that case, multiple errors will be stored in the `message` field and the structure will be plain.
+
+In addition, a 422 error code ("*Unprocessable Entity*") will be assigned to the response.
+
+
+
+Example:
+
+```json
+{
+    "message": {
+        "json": {
+            "url": [
+                "Not a valid URL."
+            ],
+            "client_id": [
+                "Not a valid integer."
+            ]
+        }
+    },
+    "success": false
+}
+```
 
 
 
@@ -633,11 +689,12 @@ Common errors include, but not limited to:
 
 <u>422 - Invoice page-length cannot be longer than 6 pages.</u>
 
-```
+```json
 {
-  "external_id": "Form_9799f10d-eb5c-4abb-9e68-ccd6255ba69f_Document.pdf",
+  "external_id": "Form_cccb3c58-35d5-468f-b7c9-5c6e4b15a6c8_Document.pdf",
   "client_id": 65,
-  "message": "Failed to predict for Image Form_9799f10d-eb5c-4abb-9e68-ccd6255ba69f_Document.pdf: Unprocessable Error: PDF Error: Invoice page-length cannot be longer than 6 pages. Image Id: Form_9799f10d-eb5c-4abb-9e68-ccd6255ba69f_Document.pdf",
+  "type": "not_an_image_file_error",
+  "message": "Failed to predict for Image Form_cccb3c58-35d5-468f-b7c9-5c6e4b15a6c8_Document.pdf: Unprocessable Error: Not an Image File Error: Image Form_cccb3c58-35d5-468f-b7c9-5c6e4b15a6c8_Document.pdf is not an image file.",
   "success": false
 }
 ```
