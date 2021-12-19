@@ -207,8 +207,8 @@ Description: The document's expense-type
 	"depreciation",
 	"banking",
 	"fuel_reimbursement",
-    "merchandise",
-    "professional_services_and_subcontractors"
+	"merchandise",
+	"professional_services_and_subcontractors"
 ]
 ```
 
