@@ -6,7 +6,13 @@
 
 ```json
 {
+  "supplier_name": {
+    "confidence": "high",
+    "coordinates": null,
+    "value": "חמשת הפסים קלין בע\"מ"
+  },
   "total_amount": {
+    "confidence": "high",
     "coordinates": {
       "original": [
         [
@@ -43,156 +49,45 @@
           156,
           958
         ]
-      ]
-    },
-    "value": 1572,
-    "confidence": "high"
-  },
-  "vat_amount": {
-    "coordinates": {
-      "original": [
-        [
-          251,
-          1206
-        ],
-        [
-          321,
-          1207
-        ],
-        [
-          321,
-          1231
-        ],
-        [
-          251,
-          1230
-        ]
       ],
-      "normalized": [
+      "relative": [
         [
-          189,
-          906
+          0.13,
+          0.53
         ],
         [
-          241,
-          907
+          0.2,
+          0.53
         ],
         [
-          241,
-          925
+          0.2,
+          0.55
         ],
         [
-          189,
-          924
+          0.13,
+          0.55
         ]
       ]
     },
-    "value": 228.41,
-    "confidence": "high"
+    "value": 1572
   },
-  "created": "2021-08-19T14:28:49.938383",
-  "timestamp": 1629383329.938383,
+  "expense_type": {
+    "confidence": "medium",
+    "coordinates": null,
+    "value": "other"
+  },
   "primary_document_type": {
+    "confidence": "high",
     "coordinates": null,
-    "value": "invoice",
-    "confidence": "high"
-  },
-  "external_id": "Form_610845c3-43a7-43b7-8fb8-b8bb2ca17f25_invoice.png",
-  "currency": {
-    "coordinates": null,
-    "value": "ils",
-    "confidence": "medium"
-  },
-  "business_number": {
-    "coordinates": {
-      "original": [
-        [
-          242,
-          265
-        ],
-        [
-          405,
-          268
-        ],
-        [
-          405,
-          297
-        ],
-        [
-          242,
-          294
-        ]
-      ],
-      "normalized": [
-        [
-          182,
-          199
-        ],
-        [
-          304,
-          201
-        ],
-        [
-          304,
-          223
-        ],
-        [
-          182,
-          221
-        ]
-      ]
-    },
-    "value": 514713288,
-    "confidence": "high"
-  },
-  "issue_date": {
-    "coordinates": {
-      "original": [
-        [
-          1041,
-          1086
-        ],
-        [
-          1178,
-          1090
-        ],
-        [
-          1176,
-          1117
-        ],
-        [
-          1039,
-          1113
-        ]
-      ],
-      "normalized": [
-        [
-          782,
-          816
-        ],
-        [
-          885,
-          819
-        ],
-        [
-          884,
-          839
-        ],
-        [
-          781,
-          836
-        ]
-      ]
-    },
-    "value": "31/08/2020",
-    "confidence": "high"
+    "value": "invoice"
   },
   "document_type": {
+    "confidence": "high",
     "coordinates": null,
-    "value": "invoice",
-    "confidence": "high"
+    "value": "invoice"
   },
   "document_number": {
+    "confidence": "high",
     "coordinates": {
       "original": [
         [
@@ -229,12 +124,31 @@
           411,
           323
         ]
+      ],
+      "relative": [
+        [
+          0.33,
+          0.16
+        ],
+        [
+          0.4,
+          0.17
+        ],
+        [
+          0.4,
+          0.19
+        ],
+        [
+          0.33,
+          0.18
+        ]
       ]
     },
-    "value": 7890,
-    "confidence": "high"
+    "value": 7890
   },
+  "created": "2021-12-19T14:32:16.203976",
   "net_amount": {
+    "confidence": "high",
     "coordinates": {
       "original": [
         [
@@ -271,15 +185,214 @@
           173,
           896
         ]
+      ],
+      "relative": [
+        [
+          0.14,
+          0.5
+        ],
+        [
+          0.2,
+          0.5
+        ],
+        [
+          0.2,
+          0.51
+        ],
+        [
+          0.14,
+          0.51
+        ]
       ]
     },
-    "value": 1343.59,
-    "confidence": "high"
+    "value": 1343.59
   },
-  "supplier_name": {
+  "external_id": "Form_49b21fcf-d7ab-4d54-a280-8c7688df1dcb_invoice.png",
+  "issue_date": {
+    "confidence": "high",
+    "coordinates": {
+      "original": [
+        [
+          1041,
+          1086
+        ],
+        [
+          1178,
+          1090
+        ],
+        [
+          1176,
+          1117
+        ],
+        [
+          1039,
+          1113
+        ]
+      ],
+      "normalized": [
+        [
+          782,
+          816
+        ],
+        [
+          885,
+          819
+        ],
+        [
+          884,
+          839
+        ],
+        [
+          781,
+          836
+        ]
+      ],
+      "relative": [
+        [
+          0.63,
+          0.46
+        ],
+        [
+          0.71,
+          0.47
+        ],
+        [
+          0.71,
+          0.48
+        ],
+        [
+          0.63,
+          0.48
+        ]
+      ]
+    },
+    "value": "31/08/2020"
+  },
+  "business_number": {
+    "confidence": "high",
+    "coordinates": {
+      "original": [
+        [
+          242,
+          265
+        ],
+        [
+          405,
+          268
+        ],
+        [
+          405,
+          297
+        ],
+        [
+          242,
+          294
+        ]
+      ],
+      "normalized": [
+        [
+          182,
+          199
+        ],
+        [
+          304,
+          201
+        ],
+        [
+          304,
+          223
+        ],
+        [
+          182,
+          221
+        ]
+      ],
+      "relative": [
+        [
+          0.15,
+          0.11
+        ],
+        [
+          0.25,
+          0.11
+        ],
+        [
+          0.25,
+          0.13
+        ],
+        [
+          0.15,
+          0.13
+        ]
+      ]
+    },
+    "value": 514713288
+  },
+  "currency": {
+    "confidence": "medium",
     "coordinates": null,
-    "value": "חמשת הפסים קלין בע\"מ",
-    "confidence": "high"
+    "value": "ils"
+  },
+  "timestamp": 1639924336.203976,
+  "vat_amount": {
+    "confidence": "high",
+    "coordinates": {
+      "original": [
+        [
+          251,
+          1206
+        ],
+        [
+          321,
+          1207
+        ],
+        [
+          321,
+          1231
+        ],
+        [
+          251,
+          1230
+        ]
+      ],
+      "normalized": [
+        [
+          189,
+          906
+        ],
+        [
+          241,
+          907
+        ],
+        [
+          241,
+          925
+        ],
+        [
+          189,
+          924
+        ]
+      ],
+      "relative": [
+        [
+          0.15,
+          0.52
+        ],
+        [
+          0.19,
+          0.52
+        ],
+        [
+          0.19,
+          0.53
+        ],
+        [
+          0.15,
+          0.53
+        ]
+      ]
+    },
+    "value": 228.41
   }
 }
 ```
@@ -483,65 +596,33 @@ Optional values:
 
 
 
+#### Expense Type
+
+This will represent the expense classification and will contain one of the following values:
+
+```json
+[
+    "other",
+	"fuel",
+	"office",
+	"travel",
+    "merchandise",
+    "professional_services_and_subcontractors",
+    "advertising_and_promotion",
+    "vehicle_maintenance_and_transport",
+    "mail_and_communication",
+    "taxes_and_fees",
+    "rent_and_property_management",
+]
+```
+
+
+
 
 
 ## Future Fields
 
 These fields are not yet supported, but will be available in the near future
-
-
-
-#### Expense Type
-
-This will represent the expense classification and will contain one of the following values:
-
-
-
-```json
-[
-	"fuel",
-	"basic_inventory",
-	"vehicle_maintenance_and_transport",
-	"other_expenses",
-	"professional_services",
-	"electricity_and_water",
-	"local_merchandise",
-	"travel",
-	"advertising_and_promotion",
-	"credit_card_fees",
-	"mail_and_communication",
-	"consumables",
-	"rent_and_property_management",
-	"education_and_professional_literature",
-	"office",
-	"maintenance_and_repairs",
-	"other_fixed_assets",
-	"additional_wages",
-	"outsource_and_subcontractors",
-	"packaging",
-	"raw_and_building materials",
-	"refreshments_gifts_donations_fines",
-	"Computers_and_data_processing_equipment",
-	"maintenance_and_cleanliness",
-	"international_merchandise",
-	"management_fee",
-	"furniture_and_accessories",
-	"taxes_and_fees",
-	"delivery_and_storage",
-	"wages",
-	"other",
-	"legal",
-	"research_and_development",
-	"international_travel",
-	"vehicle",
-	"Work_clothes",
-	"tenders_fairs_exhibitions",
-	"insurance",
-	"depreciation",
-	"banking",
-	"fuel_reimbursement"
-]
-```
 
 
 

@@ -197,285 +197,398 @@ Response Text: {"external_id": "ex_id_cd8482cb-899b-48bc-9530-430ede150951", "cl
 
 Can't find image. Let's give it 5 seconds to create before we try again...
 Response Status Code: 200
-Response Text: {"supplier_name": {"value": "\u05d7\u05de\u05e9\u05ea \u05d4\u05e4\u05e1\u05d9\u05dd \u05e7\u05dc\u05d9\u05df \u05d1\u05e2\"\u05de", "confidence": "high", "coordinates": null}, "currency": {"value": "ils", "confidence": "medium", "coordinates": null}, "document_type": {"value": "invoice", "confidence": "high", "coordinates": null}, "vat_amount": {"value": 228.41, "confidence": "high", "coordinates": {"original": [[251, 1206], [321, 1207], [321, 1231], [251, 1230]], "normalized": [[189, 906], [241, 907], [241, 925], [189, 924]]}}, "business_number": {"value": 514713288, "confidence": "high", "coordinates": {"original": [[242, 265], [405, 268], [405, 297], [242, 294]], "normalized": [[182, 199], [304, 201], [304, 223], [182, 221]]}}, "timestamp": 1629383950.99213, "total_amount": {"value": 1572.0, "confidence": "high", "coordinates": {"original": [[208, 1246], [322, 1246], [322, 1275], [208, 1275]], "normalized": [[156, 936], [242, 936], [242, 958], [156, 958]]}}, "issue_date": {"value": "31/08/2020", "confidence": "high", "coordinates": {"original": [[1041, 1086], [1178, 1090], [1176, 1117], [1039, 1113]], "normalized": [[782, 816], [885, 819], [884, 839], [781, 836]]}}, "primary_document_type": {"value": "invoice", "confidence": "high", "coordinates": null}, "document_number": {"value": 7890, "confidence": "high", "coordinates": {"original": [[548, 385], [667, 389], [665, 434], [547, 430]], "normalized": [[412, 289], [501, 292], [500, 326], [411, 323]]}}, "created": "2021-08-19T14:39:10.992130", "net_amount": {"value": 1343.59, "confidence": "high", "coordinates": {"original": [[230, 1167], [325, 1167], [325, 1192], [230, 1192]], "normalized": [[173, 877], [244, 877], [244, 896], [173, 896]]}}, "external_id": "ex_id_cd8482cb-899b-48bc-9530-430ede150951"}
+Response Text: {"supplier_name":{"confidence":"high","coordinates":null,"value":"חמשת הפסים קלין בע\"מ"},"total_amount":{"confidence":"high","coordinates":{"original":[[208,1246],[322,1246],[322,1275],[208,1275]],"normalized":[[156,936],[242,936],[242,958],[156,958]],"relative":[[0.13,0.53],[0.2,0.53],[0.2,0.55],[0.13,0.55]]},"value":1572},"expense_type":{"confidence":"medium","coordinates":null,"value":"other"},"primary_document_type":{"confidence":"high","coordinates":null,"value":"invoice"},"document_type":{"confidence":"high","coordinates":null,"value":"invoice"},"document_number":{"confidence":"high","coordinates":{"original":[[548,385],[667,389],[665,434],[547,430]],"normalized":[[412,289],[501,292],[500,326],[411,323]],"relative":[[0.33,0.16],[0.4,0.17],[0.4,0.19],[0.33,0.18]]},"value":7890},"created":"2021-12-19T14:32:16.203976","net_amount":{"confidence":"high","coordinates":{"original":[[230,1167],[325,1167],[325,1192],[230,1192]],"normalized":[[173,877],[244,877],[244,896],[173,896]],"relative":[[0.14,0.5],[0.2,0.5],[0.2,0.51],[0.14,0.51]]},"value":1343.59},"external_id":"Form_49b21fcf-d7ab-4d54-a280-8c7688df1dcb_invoice.png","issue_date":{"confidence":"high","coordinates":{"original":[[1041,1086],[1178,1090],[1176,1117],[1039,1113]],"normalized":[[782,816],[885,819],[884,839],[781,836]],"relative":[[0.63,0.46],[0.71,0.47],[0.71,0.48],[0.63,0.48]]},"value":"31/08/2020"},"business_number":{"confidence":"high","coordinates":{"original":[[242,265],[405,268],[405,297],[242,294]],"normalized":[[182,199],[304,201],[304,223],[182,221]],"relative":[[0.15,0.11],[0.25,0.11],[0.25,0.13],[0.15,0.13]]},"value":514713288},"currency":{"confidence":"medium","coordinates":null,"value":"ils"},"timestamp":1639924336.203976,"vat_amount":{"confidence":"high","coordinates":{"original":[[251,1206],[321,1207],[321,1231],[251,1230]],"normalized":[[189,906],[241,907],[241,925],[189,924]],"relative":[[0.15,0.52],[0.19,0.52],[0.19,0.53],[0.15,0.53]]},"value":228.41}}
 
 Successfully retrieved Prediction for Invoice Image ex_id_cd8482cb-899b-48bc-9530-430ede150951:
 {
-    "business_number": {
-        "confidence": "high",
-        "coordinates": {
-            "normalized": [
-                [
-                    182,
-                    199
-                ],
-                [
-                    304,
-                    201
-                ],
-                [
-                    304,
-                    223
-                ],
-                [
-                    182,
-                    221
-                ]
-            ],
-            "original": [
-                [
-                    242,
-                    265
-                ],
-                [
-                    405,
-                    268
-                ],
-                [
-                    405,
-                    297
-                ],
-                [
-                    242,
-                    294
-                ]
-            ]
-        },
-        "value": 514713288
+  "supplier_name": {
+    "confidence": "high",
+    "coordinates": null,
+    "value": "חמשת הפסים קלין בע\"מ"
+  },
+  "total_amount": {
+    "confidence": "high",
+    "coordinates": {
+      "original": [
+        [
+          208,
+          1246
+        ],
+        [
+          322,
+          1246
+        ],
+        [
+          322,
+          1275
+        ],
+        [
+          208,
+          1275
+        ]
+      ],
+      "normalized": [
+        [
+          156,
+          936
+        ],
+        [
+          242,
+          936
+        ],
+        [
+          242,
+          958
+        ],
+        [
+          156,
+          958
+        ]
+      ],
+      "relative": [
+        [
+          0.13,
+          0.53
+        ],
+        [
+          0.2,
+          0.53
+        ],
+        [
+          0.2,
+          0.55
+        ],
+        [
+          0.13,
+          0.55
+        ]
+      ]
     },
-    "created": "2021-08-19T14:39:10.992130",
-    "currency": {
-        "confidence": "medium",
-        "coordinates": null,
-        "value": "ils"
+    "value": 1572
+  },
+  "expense_type": {
+    "confidence": "medium",
+    "coordinates": null,
+    "value": "other"
+  },
+  "primary_document_type": {
+    "confidence": "high",
+    "coordinates": null,
+    "value": "invoice"
+  },
+  "document_type": {
+    "confidence": "high",
+    "coordinates": null,
+    "value": "invoice"
+  },
+  "document_number": {
+    "confidence": "high",
+    "coordinates": {
+      "original": [
+        [
+          548,
+          385
+        ],
+        [
+          667,
+          389
+        ],
+        [
+          665,
+          434
+        ],
+        [
+          547,
+          430
+        ]
+      ],
+      "normalized": [
+        [
+          412,
+          289
+        ],
+        [
+          501,
+          292
+        ],
+        [
+          500,
+          326
+        ],
+        [
+          411,
+          323
+        ]
+      ],
+      "relative": [
+        [
+          0.33,
+          0.16
+        ],
+        [
+          0.4,
+          0.17
+        ],
+        [
+          0.4,
+          0.19
+        ],
+        [
+          0.33,
+          0.18
+        ]
+      ]
     },
-    "document_number": {
-        "confidence": "high",
-        "coordinates": {
-            "normalized": [
-                [
-                    412,
-                    289
-                ],
-                [
-                    501,
-                    292
-                ],
-                [
-                    500,
-                    326
-                ],
-                [
-                    411,
-                    323
-                ]
-            ],
-            "original": [
-                [
-                    548,
-                    385
-                ],
-                [
-                    667,
-                    389
-                ],
-                [
-                    665,
-                    434
-                ],
-                [
-                    547,
-                    430
-                ]
-            ]
-        },
-        "value": 7890
+    "value": 7890
+  },
+  "created": "2021-12-19T14:32:16.203976",
+  "net_amount": {
+    "confidence": "high",
+    "coordinates": {
+      "original": [
+        [
+          230,
+          1167
+        ],
+        [
+          325,
+          1167
+        ],
+        [
+          325,
+          1192
+        ],
+        [
+          230,
+          1192
+        ]
+      ],
+      "normalized": [
+        [
+          173,
+          877
+        ],
+        [
+          244,
+          877
+        ],
+        [
+          244,
+          896
+        ],
+        [
+          173,
+          896
+        ]
+      ],
+      "relative": [
+        [
+          0.14,
+          0.5
+        ],
+        [
+          0.2,
+          0.5
+        ],
+        [
+          0.2,
+          0.51
+        ],
+        [
+          0.14,
+          0.51
+        ]
+      ]
     },
-    "document_type": {
-        "confidence": "high",
-        "coordinates": null,
-        "value": "invoice"
+    "value": 1343.59
+  },
+  "external_id": "Form_49b21fcf-d7ab-4d54-a280-8c7688df1dcb_invoice.png",
+  "issue_date": {
+    "confidence": "high",
+    "coordinates": {
+      "original": [
+        [
+          1041,
+          1086
+        ],
+        [
+          1178,
+          1090
+        ],
+        [
+          1176,
+          1117
+        ],
+        [
+          1039,
+          1113
+        ]
+      ],
+      "normalized": [
+        [
+          782,
+          816
+        ],
+        [
+          885,
+          819
+        ],
+        [
+          884,
+          839
+        ],
+        [
+          781,
+          836
+        ]
+      ],
+      "relative": [
+        [
+          0.63,
+          0.46
+        ],
+        [
+          0.71,
+          0.47
+        ],
+        [
+          0.71,
+          0.48
+        ],
+        [
+          0.63,
+          0.48
+        ]
+      ]
     },
-    "external_id": "ex_id_cd8482cb-899b-48bc-9530-430ede150951",
-    "issue_date": {
-        "confidence": "high",
-        "coordinates": {
-            "normalized": [
-                [
-                    782,
-                    816
-                ],
-                [
-                    885,
-                    819
-                ],
-                [
-                    884,
-                    839
-                ],
-                [
-                    781,
-                    836
-                ]
-            ],
-            "original": [
-                [
-                    1041,
-                    1086
-                ],
-                [
-                    1178,
-                    1090
-                ],
-                [
-                    1176,
-                    1117
-                ],
-                [
-                    1039,
-                    1113
-                ]
-            ]
-        },
-        "value": "31/08/2020"
+    "value": "31/08/2020"
+  },
+  "business_number": {
+    "confidence": "high",
+    "coordinates": {
+      "original": [
+        [
+          242,
+          265
+        ],
+        [
+          405,
+          268
+        ],
+        [
+          405,
+          297
+        ],
+        [
+          242,
+          294
+        ]
+      ],
+      "normalized": [
+        [
+          182,
+          199
+        ],
+        [
+          304,
+          201
+        ],
+        [
+          304,
+          223
+        ],
+        [
+          182,
+          221
+        ]
+      ],
+      "relative": [
+        [
+          0.15,
+          0.11
+        ],
+        [
+          0.25,
+          0.11
+        ],
+        [
+          0.25,
+          0.13
+        ],
+        [
+          0.15,
+          0.13
+        ]
+      ]
     },
-    "net_amount": {
-        "confidence": "high",
-        "coordinates": {
-            "normalized": [
-                [
-                    173,
-                    877
-                ],
-                [
-                    244,
-                    877
-                ],
-                [
-                    244,
-                    896
-                ],
-                [
-                    173,
-                    896
-                ]
-            ],
-            "original": [
-                [
-                    230,
-                    1167
-                ],
-                [
-                    325,
-                    1167
-                ],
-                [
-                    325,
-                    1192
-                ],
-                [
-                    230,
-                    1192
-                ]
-            ]
-        },
-        "value": 1343.59
+    "value": 514713288
+  },
+  "currency": {
+    "confidence": "medium",
+    "coordinates": null,
+    "value": "ils"
+  },
+  "timestamp": 1639924336.203976,
+  "vat_amount": {
+    "confidence": "high",
+    "coordinates": {
+      "original": [
+        [
+          251,
+          1206
+        ],
+        [
+          321,
+          1207
+        ],
+        [
+          321,
+          1231
+        ],
+        [
+          251,
+          1230
+        ]
+      ],
+      "normalized": [
+        [
+          189,
+          906
+        ],
+        [
+          241,
+          907
+        ],
+        [
+          241,
+          925
+        ],
+        [
+          189,
+          924
+        ]
+      ],
+      "relative": [
+        [
+          0.15,
+          0.52
+        ],
+        [
+          0.19,
+          0.52
+        ],
+        [
+          0.19,
+          0.53
+        ],
+        [
+          0.15,
+          0.53
+        ]
+      ]
     },
-    "primary_document_type": {
-        "confidence": "high",
-        "coordinates": null,
-        "value": "invoice"
-    },
-    "supplier_name": {
-        "confidence": "high",
-        "coordinates": null,
-        "value": "\u05d7\u05de\u05e9\u05ea \u05d4\u05e4\u05e1\u05d9\u05dd \u05e7\u05dc\u05d9\u05df \u05d1\u05e2\"\u05de"
-    },
-    "timestamp": 1629383950.99213,
-    "total_amount": {
-        "confidence": "high",
-        "coordinates": {
-            "normalized": [
-                [
-                    156,
-                    936
-                ],
-                [
-                    242,
-                    936
-                ],
-                [
-                    242,
-                    958
-                ],
-                [
-                    156,
-                    958
-                ]
-            ],
-            "original": [
-                [
-                    208,
-                    1246
-                ],
-                [
-                    322,
-                    1246
-                ],
-                [
-                    322,
-                    1275
-                ],
-                [
-                    208,
-                    1275
-                ]
-            ]
-        },
-        "value": 1572.0
-    },
-    "vat_amount": {
-        "confidence": "high",
-        "coordinates": {
-            "normalized": [
-                [
-                    189,
-                    906
-                ],
-                [
-                    241,
-                    907
-                ],
-                [
-                    241,
-                    925
-                ],
-                [
-                    189,
-                    924
-                ]
-            ],
-            "original": [
-                [
-                    251,
-                    1206
-                ],
-                [
-                    321,
-                    1207
-                ],
-                [
-                    321,
-                    1231
-                ],
-                [
-                    251,
-                    1230
-                ]
-            ]
-        },
-        "value": 228.41
-    }
+    "value": 228.41
+  }
 }
 ```
 
