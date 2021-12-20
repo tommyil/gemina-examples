@@ -603,9 +603,9 @@ This will represent the expense classification and will contain one of the follo
 ```json
 [
     "other",
-	"fuel",
-	"office",
-	"travel",
+    "fuel",
+    "office",
+    "travel",
     "merchandise",
     "professional_services_and_subcontractors",
     "advertising_and_promotion",
