@@ -393,3 +393,19 @@ The full example code is available here:
 
 
 
+
+
+------
+
+
+
+## More Resources
+
+
+
+Response Types - https://github.com/tommyil/gemina-examples/blob/master/response_types.md
+
+Python Implementation - https://github.com/tommyil/gemina-examples
+
+C# Implementation - https://github.com/tommyil/gemina-examples-cs
+

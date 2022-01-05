@@ -6,394 +6,399 @@
 
 ```json
 {
-  "supplier_name": {
-    "confidence": "high",
-    "coordinates": null,
-    "value": "חמשת הפסים קלין בע\"מ"
-  },
-  "total_amount": {
-    "confidence": "high",
-    "coordinates": {
-      "original": [
-        [
-          208,
-          1246
-        ],
-        [
-          322,
-          1246
-        ],
-        [
-          322,
-          1275
-        ],
-        [
-          208,
-          1275
-        ]
-      ],
-      "normalized": [
-        [
-          156,
-          936
-        ],
-        [
-          242,
-          936
-        ],
-        [
-          242,
-          958
-        ],
-        [
-          156,
-          958
-        ]
-      ],
-      "relative": [
-        [
-          0.13,
-          0.53
-        ],
-        [
-          0.2,
-          0.53
-        ],
-        [
-          0.2,
-          0.55
-        ],
-        [
-          0.13,
-          0.55
-        ]
-      ]
+    "business_number": {
+        "confidence": "high",
+        "coordinates": {
+            "normalized": [
+                [
+                    182,
+                    199
+                ],
+                [
+                    304,
+                    201
+                ],
+                [
+                    304,
+                    223
+                ],
+                [
+                    182,
+                    221
+                ]
+            ],
+            "original": [
+                [
+                    242,
+                    265
+                ],
+                [
+                    405,
+                    268
+                ],
+                [
+                    405,
+                    297
+                ],
+                [
+                    242,
+                    294
+                ]
+            ],
+            "relative": [
+                [
+                    0.15,
+                    0.11
+                ],
+                [
+                    0.25,
+                    0.11
+                ],
+                [
+                    0.25,
+                    0.13
+                ],
+                [
+                    0.15,
+                    0.13
+                ]
+            ]
+        },
+        "value": 514713288
     },
-    "value": 1572
-  },
-  "expense_type": {
-    "confidence": "medium",
-    "coordinates": null,
-    "value": "other"
-  },
-  "primary_document_type": {
-    "confidence": "high",
-    "coordinates": null,
-    "value": "invoice"
-  },
-  "document_type": {
-    "confidence": "high",
-    "coordinates": null,
-    "value": "invoice"
-  },
-  "document_number": {
-    "confidence": "high",
-    "coordinates": {
-      "original": [
-        [
-          548,
-          385
-        ],
-        [
-          667,
-          389
-        ],
-        [
-          665,
-          434
-        ],
-        [
-          547,
-          430
-        ]
-      ],
-      "normalized": [
-        [
-          412,
-          289
-        ],
-        [
-          501,
-          292
-        ],
-        [
-          500,
-          326
-        ],
-        [
-          411,
-          323
-        ]
-      ],
-      "relative": [
-        [
-          0.33,
-          0.16
-        ],
-        [
-          0.4,
-          0.17
-        ],
-        [
-          0.4,
-          0.19
-        ],
-        [
-          0.33,
-          0.18
-        ]
-      ]
+    "created": "2022-01-05T14:46:29.397518",
+    "currency": {
+        "confidence": "medium",
+        "coordinates": null,
+        "value": "ils"
     },
-    "value": 7890
-  },
-  "created": "2021-12-19T14:32:16.203976",
-  "net_amount": {
-    "confidence": "high",
-    "coordinates": {
-      "original": [
-        [
-          230,
-          1167
-        ],
-        [
-          325,
-          1167
-        ],
-        [
-          325,
-          1192
-        ],
-        [
-          230,
-          1192
-        ]
-      ],
-      "normalized": [
-        [
-          173,
-          877
-        ],
-        [
-          244,
-          877
-        ],
-        [
-          244,
-          896
-        ],
-        [
-          173,
-          896
-        ]
-      ],
-      "relative": [
-        [
-          0.14,
-          0.5
-        ],
-        [
-          0.2,
-          0.5
-        ],
-        [
-          0.2,
-          0.51
-        ],
-        [
-          0.14,
-          0.51
-        ]
-      ]
+    "document_number": {
+        "confidence": "high",
+        "coordinates": {
+            "normalized": [
+                [
+                    412,
+                    289
+                ],
+                [
+                    501,
+                    292
+                ],
+                [
+                    500,
+                    326
+                ],
+                [
+                    411,
+                    323
+                ]
+            ],
+            "original": [
+                [
+                    548,
+                    385
+                ],
+                [
+                    667,
+                    389
+                ],
+                [
+                    665,
+                    434
+                ],
+                [
+                    547,
+                    430
+                ]
+            ],
+            "relative": [
+                [
+                    0.33,
+                    0.16
+                ],
+                [
+                    0.4,
+                    0.17
+                ],
+                [
+                    0.4,
+                    0.19
+                ],
+                [
+                    0.33,
+                    0.18
+                ]
+            ]
+        },
+        "value": 7890
     },
-    "value": 1343.59
-  },
-  "external_id": "Form_49b21fcf-d7ab-4d54-a280-8c7688df1dcb_invoice.png",
-  "issue_date": {
-    "confidence": "high",
-    "coordinates": {
-      "original": [
-        [
-          1041,
-          1086
-        ],
-        [
-          1178,
-          1090
-        ],
-        [
-          1176,
-          1117
-        ],
-        [
-          1039,
-          1113
-        ]
-      ],
-      "normalized": [
-        [
-          782,
-          816
-        ],
-        [
-          885,
-          819
-        ],
-        [
-          884,
-          839
-        ],
-        [
-          781,
-          836
-        ]
-      ],
-      "relative": [
-        [
-          0.63,
-          0.46
-        ],
-        [
-          0.71,
-          0.47
-        ],
-        [
-          0.71,
-          0.48
-        ],
-        [
-          0.63,
-          0.48
-        ]
-      ]
+    "document_type": {
+        "confidence": "high",
+        "coordinates": null,
+        "value": "invoice"
     },
-    "value": "31/08/2020"
-  },
-  "business_number": {
-    "confidence": "high",
-    "coordinates": {
-      "original": [
-        [
-          242,
-          265
-        ],
-        [
-          405,
-          268
-        ],
-        [
-          405,
-          297
-        ],
-        [
-          242,
-          294
-        ]
-      ],
-      "normalized": [
-        [
-          182,
-          199
-        ],
-        [
-          304,
-          201
-        ],
-        [
-          304,
-          223
-        ],
-        [
-          182,
-          221
-        ]
-      ],
-      "relative": [
-        [
-          0.15,
-          0.11
-        ],
-        [
-          0.25,
-          0.11
-        ],
-        [
-          0.25,
-          0.13
-        ],
-        [
-          0.15,
-          0.13
-        ]
-      ]
+    "expense_type": {
+        "confidence": "medium",
+        "coordinates": null,
+        "value": "other"
     },
-    "value": 514713288
-  },
-  "currency": {
-    "confidence": "medium",
-    "coordinates": null,
-    "value": "ils"
-  },
-  "timestamp": 1639924336.203976,
-  "vat_amount": {
-    "confidence": "high",
-    "coordinates": {
-      "original": [
-        [
-          251,
-          1206
-        ],
-        [
-          321,
-          1207
-        ],
-        [
-          321,
-          1231
-        ],
-        [
-          251,
-          1230
-        ]
-      ],
-      "normalized": [
-        [
-          189,
-          906
-        ],
-        [
-          241,
-          907
-        ],
-        [
-          241,
-          925
-        ],
-        [
-          189,
-          924
-        ]
-      ],
-      "relative": [
-        [
-          0.15,
-          0.52
-        ],
-        [
-          0.19,
-          0.52
-        ],
-        [
-          0.19,
-          0.53
-        ],
-        [
-          0.15,
-          0.53
-        ]
-      ]
+    "external_id": "ex_id_37a328f0-7aac-4fac-8bd5-00fef6459cc3",
+    "issue_date": {
+        "confidence": "high",
+        "coordinates": {
+            "normalized": [
+                [
+                    782,
+                    816
+                ],
+                [
+                    885,
+                    819
+                ],
+                [
+                    884,
+                    839
+                ],
+                [
+                    781,
+                    836
+                ]
+            ],
+            "original": [
+                [
+                    1041,
+                    1086
+                ],
+                [
+                    1178,
+                    1090
+                ],
+                [
+                    1176,
+                    1117
+                ],
+                [
+                    1039,
+                    1113
+                ]
+            ],
+            "relative": [
+                [
+                    0.63,
+                    0.46
+                ],
+                [
+                    0.71,
+                    0.47
+                ],
+                [
+                    0.71,
+                    0.48
+                ],
+                [
+                    0.63,
+                    0.48
+                ]
+            ]
+        },
+        "value": "31/08/2020"
     },
-    "value": 228.41
-  }
+    "net_amount": {
+        "confidence": "high",
+        "coordinates": {
+            "normalized": [
+                [
+                    173,
+                    877
+                ],
+                [
+                    244,
+                    877
+                ],
+                [
+                    244,
+                    896
+                ],
+                [
+                    173,
+                    896
+                ]
+            ],
+            "original": [
+                [
+                    230,
+                    1167
+                ],
+                [
+                    325,
+                    1167
+                ],
+                [
+                    325,
+                    1192
+                ],
+                [
+                    230,
+                    1192
+                ]
+            ],
+            "relative": [
+                [
+                    0.14,
+                    0.5
+                ],
+                [
+                    0.2,
+                    0.5
+                ],
+                [
+                    0.2,
+                    0.51
+                ],
+                [
+                    0.14,
+                    0.51
+                ]
+            ]
+        },
+        "value": 1343.59
+    },
+    "payment_method": {
+        "confidence": "medium",
+        "coordinates": null,
+        "value": "wire_transfer"
+    },
+    "primary_document_type": {
+        "confidence": "high",
+        "coordinates": null,
+        "value": "invoice"
+    },
+    "supplier_name": {
+        "confidence": "high",
+        "coordinates": null,
+        "value": "\u05d7\u05de\u05e9\u05ea \u05d4\u05e4\u05e1\u05d9\u05dd \u05e7\u05dc\u05d9\u05df \u05d1\u05e2\"\u05de"
+    },
+    "timestamp": 1641393989.397518,
+    "total_amount": {
+        "confidence": "high",
+        "coordinates": {
+            "normalized": [
+                [
+                    156,
+                    936
+                ],
+                [
+                    242,
+                    936
+                ],
+                [
+                    242,
+                    958
+                ],
+                [
+                    156,
+                    958
+                ]
+            ],
+            "original": [
+                [
+                    208,
+                    1246
+                ],
+                [
+                    322,
+                    1246
+                ],
+                [
+                    322,
+                    1275
+                ],
+                [
+                    208,
+                    1275
+                ]
+            ],
+            "relative": [
+                [
+                    0.13,
+                    0.53
+                ],
+                [
+                    0.2,
+                    0.53
+                ],
+                [
+                    0.2,
+                    0.55
+                ],
+                [
+                    0.13,
+                    0.55
+                ]
+            ]
+        },
+        "value": 1572.0
+    },
+    "vat_amount": {
+        "confidence": "high",
+        "coordinates": {
+            "normalized": [
+                [
+                    189,
+                    906
+                ],
+                [
+                    241,
+                    907
+                ],
+                [
+                    241,
+                    925
+                ],
+                [
+                    189,
+                    924
+                ]
+            ],
+            "original": [
+                [
+                    251,
+                    1206
+                ],
+                [
+                    321,
+                    1207
+                ],
+                [
+                    321,
+                    1231
+                ],
+                [
+                    251,
+                    1230
+                ]
+            ],
+            "relative": [
+                [
+                    0.15,
+                    0.52
+                ],
+                [
+                    0.19,
+                    0.52
+                ],
+                [
+                    0.19,
+                    0.53
+                ],
+                [
+                    0.15,
+                    0.53
+                ]
+            ]
+        },
+        "value": 228.41
+    }
 }
 ```
 
@@ -559,7 +564,7 @@ Possible Values:
 
 #### Currency
 
-This will provide the document's used currency.
+The document's used currency.
 
 Optional values:
 
@@ -598,7 +603,7 @@ Optional values:
 
 #### Expense Type
 
-This will represent the expense classification and will contain one of the following values:
+This field represents the expense-classification and contains one of the following values:
 
 ```json
 [
@@ -618,17 +623,9 @@ This will represent the expense classification and will contain one of the follo
 
 
 
-
-
-## Future Fields
-
-These fields are not yet supported, but will be available in the near future
-
-
-
 #### Payment Method
 
-This will provide the used payment method.
+This field provides the used payment-method.
 
 Optional values:
 
@@ -793,4 +790,20 @@ Generally, it is safe to assume that 422 responses can be forwarded to the end u
 There is an internal problem within the Gemina servers, i.e. the problem is on our end and should be fixed by us.
 
 If you encounter one such error, please inform us immediately.
+
+
+
+------
+
+
+
+## More Resources
+
+
+
+Data Loop - https://github.com/tommyil/gemina-examples/blob/master/data_loop.md
+
+Python Implementation - https://github.com/tommyil/gemina-examples
+
+C# Implementation - https://github.com/tommyil/gemina-examples-cs
 
