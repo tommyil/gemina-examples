@@ -416,6 +416,8 @@ The Predicted Value is nested within the full json response. Each one of the ret
 
 **Normalized Coordinates:** The same, but within the processed cloud-image, which has been normalized in terms of width and height.
 
+**Relative Coordinates:** The same coordinates, normalized as a relative percentage from the top left. The range is from 0 to 1. For example: the middle-point of the document is represented by the coordinate (0.5, 0.5).
+
 **Value:** The predicted value
 
 **Confidence:** The assessed confidence level of the prediction
