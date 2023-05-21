@@ -23,14 +23,14 @@ INVOICE_ID = f"ex_id_{uuid.uuid4()}"
 def upload_web_image(image_url):
     url = f"{GEMINA_API_URL}{UPLOAD_URL}"
     token = f"Basic {API_KEY}"  # Mind the space between 'Basic' and the API KEY
-    headers = {"Authorization": token}
+    headers = {"Authorization": token, "Content-Type": "application/json"}
     json_data = {
         "external_id": INVOICE_ID,
         "client_id": CLIENT_ID,
         "url": image_url,
     }
 
-    response = requests.post(url, headers=headers, data=json_data)
+    response = requests.post(url, headers=headers, json=json_data)
     print(f"Response Status Code: {response.status_code}")
     print(f"Response Text: {response.text}")
 
