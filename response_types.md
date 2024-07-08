@@ -6,6 +6,11 @@
 
 ```json
 {
+    "assignment_number": {
+        "confidence": "high",
+        "coordinates": null,
+        "value": null
+    },  
     "business_number": {
         "confidence": "high",
         "coordinates": {
@@ -494,6 +499,12 @@ Example:
 #### Supplier Name
 
 The Name of the supplier or the document issuer
+
+
+
+#### Assignment Number
+
+Number represented as string - with 9 digits or more
 
 
 

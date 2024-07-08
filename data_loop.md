@@ -38,6 +38,7 @@ https://api.gemina.co.il/v1/business_documents
     "document_number": "IL7890",
     "issue_date": "2021-07-22",
     "business_number": "EUR-514713288",
+    "assignment_number": "184023644",
     "supplier_name": "Five Straps",
     "document_type": "invoice_receipt",
     "expense_type": "fuel",
@@ -120,6 +121,16 @@ Type: String
 Description: The supplier's business-number
 
 *Can contain characters/letters as well.*
+
+
+
+##### assignment_number
+
+Type: String
+
+Description: The assignment number is a unique code given to tax invoices for transactions over 25,000 ILS, aimed at reducing fraudulent invoices.
+
+*Can contain dashes as well.*
 
 
 
@@ -288,6 +299,7 @@ Response Code: **200**
 ```json
 {
     "business_number": "EUR-514713288",
+    "assignment_number": "184023644",
     "currency": "usd",
     "document_number": "IL7890",
     "document_type": "invoice_receipt",
@@ -325,6 +337,7 @@ def send_labeled_data(image_id):
         "document_number": "IL7890", # Can contain characters as well
         "issue_date": "2021-07-22", # YYYY-MM-DD
         "business_number": "EUR-514713288", # can contain characters as well
+        "assignment_number": "184023644", # can contain dashes as well
         "supplier_name": "Five Straps", # any language
         "expense_type": "fuel", # from a closed list
         "payment_method": "credit_card", # from a closed list
@@ -370,6 +383,7 @@ Response Text: {"issue_date": "2021-07-22", "external_id": "ex_id_e12bcf79-505d-
 Successfully updated the labeled data for Invoice Image ex_id_e12bcf79-505d-4920-b8f6-d5da28b1acd7:
 {
     "business_number": "EUR-514713288",
+    "assignment_number": "184023644",
     "currency": "usd",
     "document_number": "IL7890",
     "document_type": "invoice_receipt",
