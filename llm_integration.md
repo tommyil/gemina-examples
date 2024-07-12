@@ -43,7 +43,7 @@ This makes the LLM feature ideal for reactive use cases where real-time results 
 
 1. **Higher Accuracy**: Significant improvements in fields like Business Number, Document Number, Supplier Name, and Issue Date.
 2. **Reliable Automation**: High-confidence results can be directly integrated into your systems without manual verification.
-3. **Adaptive Learning**: The model improves faster with consistent use of our feedback loop.
+3. **Adaptive Learning**: The model improves faster with consistent use of our [feedback loop](https://github.com/tommyil/gemina-examples/blob/master/data_loop.md).
 
 ## Best Practices
 
@@ -60,3 +60,23 @@ Our team is available to assist you with implementing this new feature and optim
 ---
 
 Gemina: Leading the way in AI-powered Hebrew financial document processing.
+
+
+------
+
+
+
+## More Resources
+
+
+
+Response Types - https://github.com/tommyil/gemina-examples/blob/master/response_types.md
+
+Data Loop - https://github.com/tommyil/gemina-examples/blob/master/data_loop.md
+
+Python Implementation - https://github.com/tommyil/gemina-examples
+
+C# Implementation - https://github.com/tommyil/gemina-examples-cs
+
+Node.js/TypeScript Implementation - https://github.com/tommyil/gemina-examples-ts
+
