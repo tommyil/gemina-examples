@@ -816,6 +816,8 @@ If you encounter one such error, please inform us immediately.
 
 Data Loop - https://github.com/tommyil/gemina-examples/blob/master/data_loop.md
 
+LLM Integration - https://github.com/tommyil/gemina-examples/blob/master/llm_integration.md
+
 Python Implementation - https://github.com/tommyil/gemina-examples
 
 C# Implementation - https://github.com/tommyil/gemina-examples-cs

@@ -63,7 +63,11 @@ Please note that the image file needs to be added to the **requests** files sect
 def upload_image(image_path):
     url = f"{GEMINA_API_URL}{UPLOAD_URL}"
     headers = {"Authorization": API_KEY}
-    json_data = {"external_id": INVOICE_ID}
+    json_data = {
+        "external_id": INVOICE_ID,
+        "client_id": CLIENT_ID,
+        "use_llm": True,  # <-- Optional, for LLM Support. For more details: https://github.com/tommyil/gemina-examples/blob/master/llm_integration.md
+    }
 
     with open(image_path, "rb") as image_data:
         files = {
@@ -90,6 +94,7 @@ def upload_web_image(image_url):
         "external_id": INVOICE_ID,
         "client_id": CLIENT_ID,
         "url": image_url,
+        "use_llm": True,  # <-- Optional, for LLM Support. For more details: https://github.com/tommyil/gemina-examples/blob/master/llm_integration.md
     }
 
     response = requests.post(url, headers=headers, data=json_data)
@@ -652,6 +657,8 @@ The `client_business_number` can be represented either by `string` or `int`.
 Response Types - https://github.com/tommyil/gemina-examples/blob/master/response_types.md
 
 Data Loop - https://github.com/tommyil/gemina-examples/blob/master/data_loop.md
+
+LLM Integration - https://github.com/tommyil/gemina-examples/blob/master/llm_integration.md
 
 C# Implementation - https://github.com/tommyil/gemina-examples-cs
 

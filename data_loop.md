@@ -419,6 +419,8 @@ The full example code is available here:
 
 Response Types - https://github.com/tommyil/gemina-examples/blob/master/response_types.md
 
+LLM Integration - https://github.com/tommyil/gemina-examples/blob/master/llm_integration.md
+
 Python Implementation - https://github.com/tommyil/gemina-examples
 
 C# Implementation - https://github.com/tommyil/gemina-examples-cs
