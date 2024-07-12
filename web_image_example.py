@@ -28,6 +28,7 @@ def upload_web_image(image_url):
         "external_id": INVOICE_ID,
         "client_id": CLIENT_ID,
         "url": image_url,
+        "use_llm": True,  # <-- Optional, for LLM Support. For more details: https://github.com/tommyil/gemina-examples/blob/master/llm_integration.md
     }
 
     response = requests.post(url, headers=headers, json=json_data)

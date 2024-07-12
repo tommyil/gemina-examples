@@ -27,6 +27,7 @@ def upload_image(image_path):
     json_data = {
         "external_id": INVOICE_ID,
         "client_id": CLIENT_ID,
+        "use_llm": True,  # <-- Optional, for LLM Support. For more details: https://github.com/tommyil/gemina-examples/blob/master/llm_integration.md
     }
 
     with open(image_path, "rb") as image_data:
