@@ -1,0 +1,310 @@
+{
+	"info": {
+		"_postman_id": "9939d8c9-d06c-4d6c-8999-38d225997b3d",
+		"name": "Gemina - Production Testing Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27730870"
+	},
+	"item": [
+		{
+			"name": "Upload Image",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic {{token}}",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "external_id",
+							"value": "{{external_id}}",
+							"type": "text"
+						},
+						{
+							"key": "client_id",
+							"value": "{{client_id}}",
+							"type": "text"
+						},
+						{
+							"key": "client_business_number",
+							"value": "{{businessNumber}}",
+							"type": "text"
+						},
+						{
+							"key": "file",
+							"type": "file",
+							"src": []
+						}
+					]
+				},
+				"url": {
+					"raw": "{{baseUrl}}/v1/uploads",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"v1",
+						"uploads"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Upload Image - attached base64",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic {{token}}",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"external_id\": \"{{external_id}}\",\n  \"client_id\": \"{{client_id}}\",\n  \"client_business_number\": \"{{businessNumber}}\",\n  \"file\": \"data:image/jpeg;base64,... base64 Image Data\",\n  \"use_llm\": true\n}"
+				},
+				"url": {
+					"raw": "{{baseUrl}}/v1/uploads",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"v1",
+						"uploads"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Upload Web Image",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic {{token}}",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"external_id\": \"{{external_id}}\",\n    \"client_id\": \"{{client_id}}\",\n    \"url\": \"https://www.zoho.com/invoice/images/template-gallery/service-invoice-template-1x.webp\",\n    \"client_business_number\": \"{{businessNumber}}\",\n    \"use_llm\": true\n}"
+				},
+				"url": {
+					"raw": "{{baseUrl}}/v1/uploads/web",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"v1",
+						"uploads",
+						"web"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Retrieve Prediction",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "default"
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic {{token}}",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "{{baseUrl}}/v1/business_documents/ex1",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"v1",
+						"business_documents",
+						"ex1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search Correlations",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "default"
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic {{token}}",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "{{baseUrl}}/v1/business_documents/correlations/search/Form_",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"v1",
+						"business_documents",
+						"correlations",
+						"search",
+						"Form_"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Result (Data Loop)",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic {{token}}",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \n    \"external_id\": \"ex1\", \n    \"document_type\": \"invoice_receipt\", \n    \"total_amount\": \"191.61\", \n    \"net_amount\": 143.34, \n    \"vat_amount\": \"24.36\", \n    \"document_number\": \"IL48220355XXX\", \n    \"issue_date\": \"2021-07-22\", \n    \"business_number\": \"EUR37487444X\", \n    \"supplier_name\": \"קוקו\", \n    \"expense_type\": \"fuel\", \n    \"payment_method\": \"credit_card\", \n    \"currency\": \"usd\" \n}"
+				},
+				"url": {
+					"raw": "{{baseUrl}}/v1/business_documents",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"v1",
+						"business_documents"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Retrieve Supplier",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "default"
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic {{token}}",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "{{baseUrl}}/v1/suppliers/510000011",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"v1",
+						"suppliers",
+						"510000011"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "https://api.gemina.co.il",
+			"type": "string"
+		},
+		{
+			"key": "token",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "businessNumber",
+			"value": "999999999",
+			"type": "string"
+		},
+		{
+			"key": "fileBase64",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "client_id",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "external_id",
+			"value": "ex1",
+			"type": "string"
+		}
+	]
+}
