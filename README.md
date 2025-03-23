@@ -664,6 +664,9 @@ C# Implementation - https://github.com/tommyil/gemina-examples-cs
 
 Node.js/TypeScript Implementation - https://github.com/tommyil/gemina-examples-ts
 
+Java Implementation - https://github.com/tommyil/gemina-examples-java
+
+PHP Implementation - https://github.com/tommyil/gemina-examples-php
 
 
 
