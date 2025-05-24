@@ -74,6 +74,8 @@ Response Types - https://github.com/tommyil/gemina-examples/blob/master/response
 
 Data Loop - https://github.com/tommyil/gemina-examples/blob/master/data_loop.md
 
+Line Item Integration - https://github.com/tommyil/gemina-examples/blob/master/line_items.md
+
 Python Implementation - https://github.com/tommyil/gemina-examples
 
 C# Implementation - https://github.com/tommyil/gemina-examples-cs

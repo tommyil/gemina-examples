@@ -421,6 +421,8 @@ Response Types - https://github.com/tommyil/gemina-examples/blob/master/response
 
 LLM Integration - https://github.com/tommyil/gemina-examples/blob/master/llm_integration.md
 
+Line Item Integration - https://github.com/tommyil/gemina-examples/blob/master/line_items.md
+
 Python Implementation - https://github.com/tommyil/gemina-examples
 
 C# Implementation - https://github.com/tommyil/gemina-examples-cs
